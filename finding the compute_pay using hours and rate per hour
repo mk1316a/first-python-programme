@@ -1,0 +1,18 @@
+hrs=input('enter the working hours\n')
+hrs=int(hrs)
+rate=input('enter rate per hour\n')
+rate=float(rate)
+total_pay=hrs*rate
+
+any_number=input('enter ur max hrs\n')
+n=int(any_number)
+if hrs < n:
+  a=n-hrs
+else:
+  print('traceback\n')
+
+new_rate=input('enter the new rate for extra hrs\n')
+new_rate=float(new_rate)
+compute_pay=new_rate*rate*a
+
+print(compute_pay + total_pay)
